@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Prevent horizontal overflow if needed */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* App.css */
+
+/* Reduce the size of the project cards */
+.project-card {
+  max-width: 400px;  /* Set a max width to make the card more compact */
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Images styling */
+.project-card img {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+  border-radius: 0.5rem; /* Keep the image edges rounded */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* Hover animation */
+.project-card:hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Align project card content */
+.project-card .flex {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
